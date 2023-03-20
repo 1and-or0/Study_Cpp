@@ -22,11 +22,7 @@ class Teacher : public Actor
 {
 	int careerYear;
 public:
-	void print()
-	{
-		printf("선생님의 정보\n");
-		Actor::print();
-	}
+	
 	void getOlder()
 	{
 		age += 1;
@@ -39,7 +35,7 @@ public:
 		print();
 	}
 
-	void when(int year)
+	void when(int year = 0)
 	{
 		careerYear = year;
 	}
